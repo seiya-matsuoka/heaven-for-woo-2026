@@ -16,7 +16,7 @@ function applyPassState() {
   const isDogFirst = passCount % 2 === 0;
 
   runnerPair.classList.toggle("dog-first", isDogFirst);
-  runnerPair.classList.toggle("m-first", !isDogFirst);
+  runnerPair.classList.toggle("profile-first", !isDogFirst);
 
   const lane = getNextLane();
   document.documentElement.style.setProperty("--runner-top", `${lane}%`);
